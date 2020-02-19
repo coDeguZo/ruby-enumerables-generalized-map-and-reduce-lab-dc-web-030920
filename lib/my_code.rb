@@ -15,7 +15,7 @@ def reduce(source_array, starting_value)
   total = starting_value
   i = 0
   while i < source_array.count do
-    array << yield(source_array[i], starting_value)
+    array << yield(source_array[i], total)
     i += 1
   end
   return array
