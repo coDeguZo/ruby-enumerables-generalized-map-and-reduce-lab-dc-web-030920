@@ -22,6 +22,7 @@ def reduce(array, starting_value = nil)
 
    while i < array.count do
     sum_num = yield(sum_num, array[i])
+    i += 1
    end
    return sum_num
 end
